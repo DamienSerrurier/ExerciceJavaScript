@@ -1,0 +1,7 @@
+.passwordTrue {
+    border-color: green;
+}
+
+.passwordFalse {
+    border-color: red;
+}
