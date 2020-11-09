@@ -14,5 +14,4 @@ function scrollText() {
 
     let fontTextSize = sizeText + 'em';
     text.style.fontSize = fontTextSize;
-
 }
