@@ -1,18 +1,19 @@
-const counter = document.getElementById('countYears');
-let para = document.getElementById('tagP');
+const counter = document.getElementById('countNumber');
 
 counter.onclick = function () {
 
-    for (let i = 2020; i <= 2030; i++) {
-        text = "";
-        console.log('i');
-        text = "L'année est " + i + '<br>'
-        let colorSpan = document.createElement('span');
-        para.appendChild(colorSpan).innerHTML = text;
-
-        if ((i % 4 == 0) && (i % 100 != 0) || (i % 400 == 0)) {
-            console.log('i');
-            colorSpan.classList.add('LeapYearColor');
+    for (let i = 0; i <= 100; i++) {
+        let div = document.createElement('div');
+        let text = "";
+        //console.log('i');
+        text = i
+        if (i % 15 == 0) {
+            //console.log('i');
+            div.innerHTML = "..."
+        } else {
+            div.innerHTML = text;
         }
+
+        document.body.appendChild(div);
     }
 }
