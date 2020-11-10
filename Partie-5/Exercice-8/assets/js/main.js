@@ -8,3 +8,14 @@ buttonClone.onclick = function buttonCloneField() {
 	let cloneAge = age.cloneNode(true);
 	document.body.appendChild(cloneAge);
 }
+
+
+/*const cloned = document.getElementById('cloned');
+
+cloned.addEventListener('click' , clonedInput)
+
+function clonedInput(e) {
+    e.preventDefault();
+    let name = document.getElementById("form").cloneNode(true);
+    document.getElementById('formName').appendChild(name);
+}*/
