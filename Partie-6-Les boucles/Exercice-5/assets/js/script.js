@@ -1,10 +1,12 @@
+let resultDiv = document.getElementById('resultDiv');
 let firstNumber = 2;
-let secondNumber = 8;
+let secondNumber = 3;
+let result = 0;
+
 
 while ((firstNumber * secondNumber) < 250) {
-  secondNumber++;
-  let calc = firstNumber * secondNumber;
-  let para = document.createElement('p');
-  para.textContent = calc;
-  document.body.appendChild(para);
+  result = firstNumber * secondNumber;
+  secondNumber = result ;
+  
+  resultDiv.innerHTML += '<p>' + result + '</p>';
 }
